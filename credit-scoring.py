@@ -18,11 +18,11 @@ COLOR_BR_r = ['#00CC96', '#EF553B'] #['dodgerblue', 'indianred']
 COLOR_BR = ['indianred', 'dodgerblue']
 #######################################################################################
 # Managing data import/export
-PATH = "C:/Users/BY5/CHAMSEDINE_CREDIT_SCORING/deploiement/" # os.getcwd()+'/' # change for online app or local
-PATH_INPUT = PATH+"input/"
-FILENAME_TRAIN = PATH_INPUT+'application_train_sample.csv' # sample of train set for online version 25MB
-FILENAME_TEST = PATH_INPUT+'application_test.csv'
-FILENAME_MODEL = PATH+'optimized_model.sav'
+#PATH = "C:/Users/BY5/CHAMSEDINE_CREDIT_SCORING/deploiement/" # os.getcwd()+'/' # change for online app or local
+#PATH_INPUT = PATH+"input/"
+FILENAME_TRAIN = pd.read_csv('train.csv', sep=',') # sample of train set for online version 25MB
+FILENAME_TEST = pd.read_csv('test.csv', sep=',')
+FILENAME_MODEL = 'optimized_model.sav'
 
 #######################################################################################
 # Setting layout & navigation pane
