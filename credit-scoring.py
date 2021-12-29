@@ -19,7 +19,7 @@ COLOR_BR = ['indianred', 'dodgerblue']
 #######################################################################################
 
 # Managing data import/export
-PATH = os.getcwd()+ #os.getcwd()+'/' # change for online app or local
+PATH = os.getcwd() #os.getcwd()+'/' # change for online app or local
 PATH_INPUT = PATH+"input/"
 FILENAME_TRAIN = PATH_INPUT+'train.csv' # sample of train set for online version 25MB
 FILENAME_TEST = PATH_INPUT+'test.csv'
