@@ -257,16 +257,16 @@ if rad == '🚀 Prediction Client':
                     num_plots.append(imp.iloc[i,0])
                 i+=1
 
-            st.subheader("Ranking client par rapport aux variables.")      
-            col1, col2, col3 = st.columns(3)
-            col1.plotly_chart(histogram(df_train, x=num_plots[0], client=[df_test, input_client]), use_container_width=True)
-            col2.plotly_chart(histogram(df_train, x=num_plots[1], client=[df_test, input_client]), use_container_width=True)
-            col3.plotly_chart(histogram(df_train, x=num_plots[2], client=[df_test, input_client]), use_container_width=True)
+            #st.subheader("Ranking client par rapport aux variables.")      
+            #col1, col2, col3 = st.columns(3)
+            #col1.plotly_chart(histogram(df_train, x=num_plots[0], client=[df_test, input_client]), use_container_width=True)
+            #col2.plotly_chart(histogram(df_train, x=num_plots[1], client=[df_test, input_client]), use_container_width=True)
+            #col3.plotly_chart(histogram(df_train, x=num_plots[2], client=[df_test, input_client]), use_container_width=True)
 
-            col1, col2, col3 = st.columns(3)
-            col1.plotly_chart(histogram(df_train, x=num_plots[3], client=[df_test, input_client]), use_container_width=True)
-            col2.plotly_chart(histogram(df_train, x=num_plots[4], client=[df_test, input_client]), use_container_width=True)
-            col3.plotly_chart(histogram(df_train, x=num_plots[5], client=[df_test, input_client]), use_container_width=True)
+            #col1, col2, col3 = st.columns(3)
+            #col1.plotly_chart(histogram(df_train, x=num_plots[3], client=[df_test, input_client]), use_container_width=True)
+            #col2.plotly_chart(histogram(df_train, x=num_plots[4], client=[df_test, input_client]), use_container_width=True)
+            #col3.plotly_chart(histogram(df_train, x=num_plots[5], client=[df_test, input_client]), use_container_width=True)
 
 ##########################################################################################################################
 if __name__ == "__main__":
