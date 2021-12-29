@@ -23,7 +23,7 @@ PATH = os.getcwd() #os.getcwd()+'/' # change for online app or local
 PATH_INPUT = PATH+"/input/"
 FILENAME_TRAIN = PATH_INPUT+'train.csv' # sample of train set for online version 25MB
 FILENAME_TEST = PATH_INPUT+'test.csv'
-FILENAME_MODEL = PATH+'optimized_model.sav'
+FILENAME_MODEL = PATH_INPUT+'optimized_model.sav' # PATH
 
 #######################################################################################
 # Setting layout & navigation pane
