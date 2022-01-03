@@ -42,11 +42,11 @@ rad_who = sb.radio('', ['👨🏽‍💼 Salarié'])
 if rad_who == '👨🏽‍💼 Salarié': 
     np.random.seed(13) # one major change is that client is directly asked as input since sidebar
     label_test = df_test['SK_ID_CURR'].sample(50).sort_values()
-    radio = sb.radio('', ['Listes des ID Client', 'Renseigner le Client'])
+    radio = sb.radio('', ['Listes des ID Client']) #'Renseigner le Client'
     if radio == 'Listes des ID Client': # Choice choose preselected seed13 or a known client ID
         input_client = sb.selectbox('Listes des ID Client', label_test)
-    if radio == 'Renseigner le Client':
-        input_client = int(sb.text_input('Renseigner le Client', value=147254))
+    #if radio == 'Renseigner le Client':
+        #input_client = int(sb.text_input('Renseigner le Client', value=147254))
 
     sb.markdown('**Navigation**')
     rad = sb.radio('', ['🏠 Accueil', 
