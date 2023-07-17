@@ -1,5 +1,5 @@
 # credit-scoring
-simple demo for clustumer baamtu
+simple demo for baamtu
 
 This app is access from this link :
 
